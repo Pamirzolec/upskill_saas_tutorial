@@ -29,6 +29,9 @@ gem 'bootstrap-sass', '3.3.7'
 #Use Font Awesome saas gem for adding icons
 gem 'font-awesome-sass', '4.6.2'
 
+#Use hirb for bettter database table display in console
+gem 'hirb', '0.7.3'
+
 # Use twitter bootstrap library for front-end UI and layout-
 group :development, :test do
   # Use sqlite3 as the database for Active Record
