@@ -6,7 +6,11 @@ end
 def create
   @contact = Contact.new(contact_params)
   if @contact.save
+    name = params[:contact][:name]
+    email = params[:contact][:email]
+    body = params[:contact][:comments]
     flash[:success] = "Message Sent"
+    ContactMailer.contact_email(name, email, body).deliver
      redirect_to new_contact_path
   else
     flash[:danger] = @contact.errors.full_messages.join(", ")
