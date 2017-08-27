@@ -32,6 +32,9 @@ gem 'font-awesome-sass', '4.6.2'
 #Use hirb for bettter database table display in console
 gem 'hirb', '0.7.3'
 
+# Use devise for user authentication
+gem 'devise', '4.2.0'
+
 # Use twitter bootstrap library for front-end UI and layout-
 group :development, :test do
   # Use sqlite3 as the database for Active Record
